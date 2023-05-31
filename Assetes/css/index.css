@@ -1,0 +1,140 @@
+body{
+    min-height: 100vh;
+    color: var(--text-color-bl);
+    background-color: var(--bg-color-bl);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.Logo_liens{
+    display: flex;
+    align-items: center;
+}
+
+.Logo_liens span{
+    color: var(--text-color-bl);
+    font-size: 1.8rem;
+    font-weight: 4000;
+}
+
+.center_navBar{
+    display: flex;
+}
+
+.center_navBar a{
+    color: var(--text-color-bl);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.center_navBar a:hover{
+    color: var(--color-2);
+}
+
+.center_navBar a.active{
+    color: var(--color-2);
+}
+
+.right_navbar{
+    display: flex;
+    align-items: center;
+}
+
+.right_navbar a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color-bl);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user i{
+    color: var(--color-3);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.right_navbar a:hover{
+    color: var(--color-3);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color-bl);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .center_navBar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+
+    .center_navBar{
+        position: absolute;
+        top: 100%;
+        right: -10001%;
+        width: 300px;
+        height: auto;
+        background: var(--color-4);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .center_navBar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .center_navBar a:hover{
+        color: var(--color-2);
+        transform:  translate(5px)
+    }
+    .center_navBar a.active{
+        color: var(--color-2);
+    }
+
+    .center_navBar.open{
+        right: 2%;
+    }
+
+}

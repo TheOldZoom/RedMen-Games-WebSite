@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;  
+    
+}
+
+
+:root { 
+    --bg-color-bl: #000000;
+    --text-color-bl: #ffff;
+    --bg-color-blan: #fff;
+    --text-color-black: #000000;
+    --main-color: #93b7be;
+
+    --color-1:#6e44ff;
+    --color-2:#dda448;
+    --color-3:#0cce16;
+    --color-4:#011627;
+
+    --color-5:rgba(33,23,84, 0.85);
+
+}
